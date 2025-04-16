@@ -5,12 +5,12 @@
     <title>openSUSE</title>
 </head>
 <body style="background-color: #f0f0f0; font-family: Arial;">
-    <!-- Header -->
+    
     <div style="background-color: #0000ff; color: white; text-align: center; padding: 10px;">
         <h1>openSUSE: Linux’un Çok Yönlü Sihirbazı</h1>
     </div>
 
-    <!-- Navigation -->
+    
     <div style="background-color: #add8e6; text-align: center; padding: 5px;">
         <a href="index.html" style="color: black; padding: 5px;">Ana Sayfa</a>
         <a href="ubuntu.html" style="color: black; padding: 5px;">Ubuntu</a>
@@ -22,7 +22,7 @@
         <a href="kali.html" style="color: black; padding: 5px;">Kali</a>
     </div>
 
-    <!-- Main Content -->
+    
     <div style="margin: 20px; background-color: white; padding: 10px;">
         <h2>
               <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.WFJolhvAL3WlYRNOUV9RIwAAAA%26pid%3DApi&f=1&ipt=4c55859f024c9f04f59f01a22e23b2052e01d43e8ad1480e7026860193d4c44d&ipo=images" alt="Arch Linux Logo" style="vertical-align: middle; width: 64px; height: 64px; margin-right: 10px;">
@@ -72,30 +72,14 @@
         </table>
     </div>
 
-    <!-- Back to Top Button -->
-    <div style="text-align: center; margin: 20px;">
-        <button onclick="scrollToTop()" style="background-color: #0000ff; color: white; padding: 5px;">Üste Git</button>
+   <div style="text-align: center; margin: 20px;">
+        <a href="#top"><button style="background-color: #0000ff; color: white; padding: 5px;">Üste Git</button></a>
     </div>
 
-    <!-- Footer -->
+   
     <div style="background-color: #0000ff; color: white; text-align: center; padding: 5px;">
         <p>2025 Linux Macera Sitesi - Özgürlüğe Adım At!</p>
     </div>
 
-    <script>
-        function scrollToTop() {
-            window.scrollTo(0, 0);
-        }
-
-        const username = localStorage.getItem('username');
-        if (username) {
-            document.body.insertAdjacentHTML('afterbegin', `
-                <div style="position: absolute; top: 10px; right: 10px;">
-                    <img src="https://via.placeholder.com/30" alt="Avatar">
-                    <span style="color: black;">${username}</span>
-                </div>
-            `);
-        }
-    </script>
 </body>
 </html>
