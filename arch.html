@@ -5,12 +5,12 @@
     <title>Arch Linux</title>
 </head>
 <body style="background-color: #f0f0f0; font-family: Arial;">
-    <!-- Header -->
+  
     <div style="background-color: #0000ff; color: white; text-align: center; padding: 10px;">
         <h1>Arch Linux: Özgür Ruhlu Gezgin</h1>
     </div>
 
-    <!-- Navigation -->
+   
     <div style="background-color: #add8e6; text-align: center; padding: 5px;">
         <a href="index.html" style="color: black; padding: 5px;">Ana Sayfa</a>
         <a href="ubuntu.html" style="color: black; padding: 5px;">Ubuntu</a>
@@ -22,7 +22,7 @@
         <a href="kali.html" style="color: black; padding: 5px;">Kali</a>
     </div>
 
-    <!-- Main Content -->
+   
     <div style="margin: 20px; background-color: white; padding: 10px;">
         <h2>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.yh48v_vbOPrS-TK5uDgnqAHaHa%26pid%3DApi&f=1&ipt=73a393334a49f14c50139b9bcc8b5465f9c11f8a7e68e28aef39fe23e9e0a2c0&ipo=images" alt="Arch Linux Logo" style="vertical-align: middle; width: 64px; height: 64px; margin-right: 10px;">
@@ -72,30 +72,16 @@
         </table>
     </div>
 
-    <!-- Back to Top Button -->
-    <div style="text-align: center; margin: 20px;">
-        <button onclick="scrollToTop()" style="background-color: #0000ff; color: white; padding: 5px;">Üste Git</button>
+   
+   <div style="text-align: center; margin: 20px;">
+        <a href="#top"><button style="background-color: #0000ff; color: white; padding: 5px;">Üste Git</button></a>
     </div>
 
-    <!-- Footer -->
+ 
     <div style="background-color: #0000ff; color: white; text-align: center; padding: 5px;">
         <p>2025 Linux Macera Sitesi - Özgürlüğe Adım At!</p>
     </div>
 
-    <script>
-        function scrollToTop() {
-            window.scrollTo(0, 0);
-        }
-
-        const username = localStorage.getItem('username');
-        if (username) {
-            document.body.insertAdjacentHTML('afterbegin', `
-                <div style="position: absolute; top: 10px; right: 10px;">
-                    <img src="https://via.placeholder.com/30" alt="Avatar">
-                    <span style="color: black;">${username}</span>
-                </div>
-            `);
-        }
-    </script>
+    
 </body>
 </html>
