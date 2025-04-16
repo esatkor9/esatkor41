@@ -81,20 +81,5 @@
         <p>2025 Linux Macera Sitesi - Özgürlüğe Adım At!</p>
     </div>
 
-    <script>
-        function scrollToTop() {
-            window.scrollTo(0, 0);
-        }
-
-        const username = localStorage.getItem('username');
-        if (username) {
-            document.body.insertAdjacentHTML('afterbegin', `
-                <div style="position: absolute; top: 10px; right: 10px;">
-                    <img src="https://via.placeholder.com/30" alt="Avatar">
-                    <span style="color: black;">${username}</span>
-                </div>
-            `);
-        }
-    </script>
 </body>
 </html>
