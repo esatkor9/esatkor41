@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Bilmeceleri</title>
+   <link rel="stylesheet" href="bilmece.css">
+</head>
+<body>
+    <header>
+        <h1>Linux Bilmeceleri</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="ubuntu.html">Ubuntu</a>
+        <a href="debian.html">Debian</a>
+        <a href="fedora.html">Fedora</a>
+        <a href="arch.html">Arch</a>
+        <a href="mint.html">Mint</a>
+        <a href="opensuse.html">openSUSE</a>
+        <a href="kali.html">Kali</a>
+        <a href="bilmece.html">Bilmeceler</a>
+    </nav>
+
+    <section class="main-content">
+        <h2>Linux Bilmeceni Çöz!</h2>
+        <p id="bilmece">Bilmecen yükleniyor...</p>
+        <form id="bilmece-form">
+            <input type="text" id="cevap" placeholder="Cevabınızı yazın" required>
+            <input type="submit" value="Kontrol Et">
+        </form>
+        <button id="yeni-soru">Yeni Soru</button>
+    </section>
+
+    <footer>
+        <p>2025 Linux Macera Sitesi - Özgürlüğe Adım At!</p>
+    </footer>
+
+    <script>
+        const bilmeceler = [
+            {
+                soru: "Linux'un yaratıcısı kimdir?",
+                cevap: "Linus Torvalds"
+            },
+            {
+                soru: "Linux'un maskotu olan penguenin adı nedir?",
+                cevap: "Tux"
+            },
+            {
+                soru: "Ubuntu'nun temel aldığı Linux dağıtımı hangisidir?",
+                cevap: "Debian"
+            },
+            {
+                soru: "Linux sisteminin kalbi olan çekirdek ne olarak adlandırılır?",
+                cevap: "Kernel"
+            },
+            {
+                soru: "Siber güvenlik ve penetrasyon testleri için kullanılan Linux dağıtımı nedir?",
+                cevap: "Kali"
+            }
+        ];
+
+        function yeniSoru() {
+            const bilmece = bilmeceler[Math.floor(Math.random() * bilmeceler.length)];
+            document.getElementById('bilmece').textContent = bilmece.soru;
+            document.getElementById('cevap').value = '';
+            window.currentBilmecem = bilmece;
+        }
+
+        document.getElementById('bilmece-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const kullaniciCevap = document.getElementById('cevap').value.trim().toLowerCase();
+            const dogruCevap = window.currentBilmecem.cevap.toLowerCase();
+            if (kullaniciCevap === dogruCevap) {
+                alert('Tebrikler, doğru cevap!');
+            } else {
+                alert(`Yanlış! Doğru cevap: ${window.currentBilmecem.cevap}`);
+            }
+        });
+
+        document.getElementById('yeni-soru').addEventListener('click', yeniSoru);
+
+        yeniSoru();
+    </script>
+</body>
+</html>

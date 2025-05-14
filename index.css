@@ -1,0 +1,158 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header (Başlık) */
+header {
+    background-color: #2980b9; /* Mavi renk */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Navigasyon Menüsü */
+.navbar {
+    background-color: #34495e; /* Koyu gri */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    background-color: #1abc9c; /* Hoverda yeşil */
+}
+
+/* Ana İçerik */
+.main-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    color: #2980b9; /* Başlık mavi */
+}
+
+.main-content p {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+/* Giriş Formu */
+form {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 12px 25px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1abc9c; /* Hoverda yeşil */
+}
+
+/* Üste Git Butonu */
+button {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #1abc9c; /* Hoverda yeşil */
+}
+
+/* Scroll to Top Butonu */
+#scrollTopButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2980b9;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 15px;
+    }
+
+    .main-content {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}

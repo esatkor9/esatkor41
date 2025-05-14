@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Onayı</title>
+    <link rel="stylesheet" href="success.css">
+</head>
+<body>
+    <div class="form-konteyneri">
+        <h1>Kayıt Başarılı</h1>
+        <p>Kaydınız tamamlandı!</p>
+        <div><strong>Ad Soyad:</strong> <span id="adsoyad"></span></div>
+        <div><strong>E-posta:</strong> <span id="eposta"></span></div>
+        <p><a href="index.html">Ana Sayfa</a></p>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('adsoyad').textContent = params.get('adsoyad') || 'Girilmedi';
+        document.getElementById('eposta').textContent = params.get('eposta') || 'Girilmedi';
+    </script>
+</body>
+</html>
